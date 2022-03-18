@@ -7,7 +7,7 @@ Make it configurable in the plugin file, that's it for now
 ```js
 const { Client } = require("discord.js");
 
-module.export.pluginInfo = {
+module.exports.pluginInfo = {
   name: "Plugin-name",
   author: "Plugin-author",
   github: "Plugin-github",
@@ -17,7 +17,7 @@ module.export.pluginInfo = {
  *
  * @param {Client} Client
  */
-module.export.run = (Client) => {
+module.exports.run = (Client) => {
   //Your code
 };
 ```
@@ -26,7 +26,8 @@ module.export.run = (Client) => {
 
 ```js
 const { Message, Client } = require("discord.js");
-module.export.pluginInfo = {
+
+module.exports.pluginInfo = {
   name: "Plugin-name",
   author: "Plugin-author",
   github: "Plugin-github",
@@ -37,7 +38,7 @@ module.export.pluginInfo = {
  * @param {Message} message
  * @param {Client} Client
  */
-module.export.run = (message, Client) => {
+module.exports.run = (message, Client) => {
   //Your code
 };
 ```
