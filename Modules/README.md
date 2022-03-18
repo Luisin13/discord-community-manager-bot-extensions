@@ -7,7 +7,7 @@ Make it configurable in the module file, and for locales use the bot locales fol
 ```js
 const { Client } = require("discord.js");
 
-module.export.moduleInfo = {
+module.exports.moduleInfo = {
   name: "Module-name",
   author: "Module-author",
   github: "Module-github",
@@ -17,7 +17,7 @@ module.export.moduleInfo = {
  *
  * @param {Client} Client
  */
-module.export.run = (Client) => {
+module.exports.run = (Client) => {
   //Your code
 };
 ```
