@@ -5,16 +5,16 @@ module.exports = () => {
   const btns = [];
   Buttons.buttons.forEach((btn) => {
     let style;
-    if ((btn.color = /(red)/)) {
+    if ((btn.color === /(red)/gim)) {
       style = "DANGER";
     }
-    if ((btn.color = /(green)/)) {
+    if ((btn.color === /(green)/gim)) {
       style = "SUCCESS";
     }
-    if ((btn.color = /(grey)/)) {
+    if ((btn.color === /(grey)/gim)) {
       style = "SECONDARY";
     }
-    if ((btn.color = /(blue)/)) {
+    if ((btn.color === /(blue)/gim)) {
       style = "PRIMARY";
     }
 
