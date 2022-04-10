@@ -3,18 +3,16 @@ const Buttons = require("../config/Buttons");
 
 module.exports = () => {
   const btns = [];
-  Buttons.buttons.forEach((btn) => {
+  Buttons.buttons.forEach((_, i) => {
+    const btn = Buttons.buttons[i];
     let style;
-    if ((btn.color === /(red)/gim)) {
+    if (btn.color.toLowerCase() === "red") {
       style = "DANGER";
-    }
-    if ((btn.color === /(green)/gim)) {
+    } else if (btn.color.toLowerCase() === "green") {
       style = "SUCCESS";
-    }
-    if ((btn.color === /(grey)/gim)) {
+    } else if (btn.color.toLowerCase() === "grey") {
       style = "SECONDARY";
-    }
-    if ((btn.color === /(blue)/gim)) {
+    } else if (btn.color.toLowerCase() === "blue") {
       style = "PRIMARY";
     }
 

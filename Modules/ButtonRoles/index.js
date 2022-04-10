@@ -14,10 +14,5 @@ module.exports.moduleInfo = {
  * @param {Client} Client
  */
 module.exports.run = async (Client) => {
-  // for (const [id, guild] of Client.guilds.cache) {
-  //   await guild.members.fetch();
-  //   await guild.roles.fetch();
-  // }
-
   startUp(Client);
 };
